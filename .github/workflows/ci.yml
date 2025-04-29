@@ -13,5 +13,9 @@ jobs:
         run: echo "Hello world!"
 
 
-- name: Checkout code
-  uses: actions/checkout@v4
+jobs:
+  test-accessibility:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
